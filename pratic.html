@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        .navbar {
+            background: #333;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            height: 100px;
+        }
+        .navbar h1 {
+            margin: 0;
+            font-size: 1.5em;
+            flex: 1;
+        }
+        .nav-tabs {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-tabs li {
+            margin-left: 20px;
+        }
+        .nav-tabs a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            transition: background 0.2s;
+        }
+        .nav-tabs a:hover {
+            background: #555;
+        }
+        @media (max-width: 600px) {
+            .navbar { flex-direction: column; align-items: flex-start; }
+            .nav-tabs { flex-direction: column; width: 100%; }
+            .nav-tabs li { margin: 0; }
+            .nav-tabs a { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <h1>My Website</h1>
+        <ul class="nav-tabs">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   
+</body>
+</html>

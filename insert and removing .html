@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div class="box" data-writtenby="Himanshhu kumawat">Hello World</div>           
+    </div>
+    <script>
+        let Box = document.querySelector(".box")
+
+        // Box.innerHTML="Hello World"
+        // Box.outerHTML
+
+        // Box.hasAttribute("style")
+        // Box.getAttribute("style")
+        // Box.setAttribute("style","background-color:black")
+        // Box.attributes
+        // Box.removeAttribute("style")
+
+        let div = document.createElement("div")
+        div.innerHTML = "i make by js"
+        div.setAttribute("class", "insert")
+        document.querySelector(".contain").after(div)
+
+        let cont = document.querySelector(".contain")
+        // cont.insertAdjacentHTML("beforebegin", "djklfjskldjkfjkldj")
+        cont.insertAdjacentHTML('afterbegin','<p>Hello i am very happy</p>')
+        cont.insertAdjacentHTML('beforeend','<p>Bye</p>')
+
+    
+
+
+
+    </script>
+</body>
+
+</html>
