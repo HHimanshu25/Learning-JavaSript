@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        
+    <h1 style="color: white;">Enter your hole detail to make youtube card</h1>
+    <input type="text" class="mo photo" onchange="image()" placeholder="enter your photo path">
+    <input type="text" class="tag mo" onchange="tagname()" placeholder="enter your tag name">
+    <input type="text" class="chna mo" onchange="chname()" placeholder="enter you channel-name">
+    <input type="text" class="mo vie" onchange="view()" placeholder="enter your views">
+    <input type="text" class="mo samy" onchange="time()" placeholder="enter how many day ago you make it ">
+    <button class="su" onclick="sub()">File is ready</button>
+    </div>
+    <!-- <button onclick="window.print()">take your card</button> -->
+    <div class="contain " >
+        <div class="one">
+            <div class="img">
+                <img src="" alt=""><!--post.avif-->
+            </div>
+            <div class="text">
+                <div class="up">
+                    <span class="name"></span> <!--installing vs code & how websites work | sigma web development course - tutorial #1-->
+                </div>
+                <div class="down">
+                    <span class="channel-name"></span><!--CodeWithHarry-->
+                    <span class="d"></span>
+                    <span class="view"></span><!--727k-->
+                    <span class="d"></span>
+                    <span class="time"></span><!--2 month ago-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

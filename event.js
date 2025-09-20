@@ -1,7 +1,12 @@
-document.body.style.backgroundColor = "black"
-document.body.style.color = "brown";
+// document.querySelector('.button').addEventListener('click',()=>{
+//     alert('hello chutiyo')
+// })
 
-let button = document.querySelector(".btn");
-button.addEventListener("click", function(){
-    document.querySelector(".demo").innerHTML = "you clicked the button";
+document.querySelector('.button').addEventListener('keypress',()=>{
+alert('heelo')
+})
+document.addEventListener('keydown', (r)=>{
+ if(r.key == 'f'){
+    document.querySelector('.demo').innerHTML='8'
+ }
 })

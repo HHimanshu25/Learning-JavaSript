@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -57,5 +57,25 @@
         </ul>
     </nav>
    
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="liveInput" oninput="checkLimit(this)" />
+
+<script>
+  function checkLimit(input) {
+    if (input.value > 60) {
+      input.value = 60;
+    }
+  }
+</script>
 </body>
 </html>

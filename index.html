@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            align-items: flex-start;
+            justify-self: center;
+            height: 100%;
+        }
+
+        .stop {
+            color: white;
+            font-size: 300px;
+            font-weight: 500;
+        }
+
+        input {
+            background-color: black;
+            color: white;
+            font-size: 250px;
+            font-weight: 500;
+            border: none;
+            width: 300px;
+            background-color: #222;
+
+        }
+input:focus{
+    border: none;
+    /* scrollbar-width: none; */
+}
+
+        button {
+            flex-basis: 100%;
+            font-size: 50px;
+            margin-top: 40px;
+            color: white;
+            background: #222;
+            border: none;
+            padding: 20px 40px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
-    <button class="btn">click here</button>
-    <p class="demo"></p>
-    <script src="event.js"></script>
+    <div class="stop">
+        <input type="number" class="hour" min="0" max="24" value="00" oninput="checkLimit(this)" placeholder="00">
+        <span>:</span>
+        <input type="number" class="min" min="0" max="59" value="00" oninput="checkLimit(this)" placeholder="00">
+        <span>:</span>
+        <input type="number" class="sec" min="0" max="59" value="00" oninput="checkLimit(this)" placeholder="00">
+        <br>
+        <button onclick="startCountdown()" class="start">Start</button>
+    </div>
+    <script src="stop.js"></script>
 </body>
+
 </html>
