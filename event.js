@@ -9,4 +9,4 @@ document.addEventListener('keydown', (r)=>{
  if(r.key == 'f'){
     document.querySelector('.demo').innerHTML='8'
  }
-})
+}) 

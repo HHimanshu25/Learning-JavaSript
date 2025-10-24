@@ -1,33 +1,16 @@
-let a;
-let i;
-// for(i=0; i<=100; i++){
-//     console.log(i);
-// }
-
-let obj = {
-    name: "John",
-    age: 30,
-    occupation: "Developer"
+let i=1;
+for(; i<=10;){
+    console.log(i);
+    i++;
 }
-// for(const key in obj){
-//     const element = obj[key];
-//     console.log(key, element);
-// }
 
-// for (const c of "Himanshu") {
-//     console.log(c);
-    
-// }
-
-// i = 0;
-// while (i <= 10)  {
+// while(i<=10){
 //     console.log(i);
 //     i++;
 // }
 
-i =1;
-do {
-    console.log(i);
-    i++;
-}while(i<5);
+// do{
+//     console.log(i);
+//     i++;
     
+// }while(i<=10);
