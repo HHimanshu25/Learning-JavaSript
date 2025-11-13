@@ -20,3 +20,13 @@
 // console.log(name.toLowerCase())
 
 // console.log(`he's name is "Mother child"`);
+// let str = "Himanshu"
+// console.log(str.length);
+// console.log(str.charCodeAt(0));
+let str = " klsjsf \t"
+console.log(str.repeat(5));
+
+
+
+
+
