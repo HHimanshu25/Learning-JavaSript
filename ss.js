@@ -24,22 +24,26 @@
 
 // })
 
-async function getdata() {
-    return new Promise((resolve , reject)=>{
-        setTimeout(()=>{
-            resolve(455)
-        },3000)
-    })
-}
-async function main() {
+// async function getdata() {
+//     return new Promise((resolve , reject)=>{
+//         setTimeout(()=>{
+//             resolve(455)
+//         },3000)
+//     })
+// }
+// async function main() {
 
     
-    console.log('loding');
-    console.log('do something');
-    let data = await getdata()
-    // data.then((v)=>{
-    // })
-    console.log(data)
-    console.log('success');
-}
-main()
+//     console.log('loding');
+//     console.log('do something');
+//     let data = await getdata()
+//     // data.then((v)=>{
+//     // })
+//     console.log(data)
+//     console.log('success');
+// }
+// main()
+fetch('https://jsonplaceholder.typicode.com/posts')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.log(error));
